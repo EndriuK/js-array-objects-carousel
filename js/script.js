@@ -29,3 +29,7 @@ const images = [
 // 1. recupero elemento dal DOM
 const items = document.querySelector(".items");
 const thumbs = document.querySelector(".thumbs");
+
+// creo due variabili per le due immagini attive nel dom
+let itemsContent = "";
+let thumbsContent = "";
