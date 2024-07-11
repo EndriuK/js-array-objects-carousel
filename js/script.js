@@ -47,3 +47,13 @@ images.forEach((image) => {
                       <img src="${image.image}" alt="${image.title}">
                     </div>`;
 });
+
+// appendere con innerHTML il contenuto della variabile itemsContent al contenitore items
+items.innerHTML = itemsContent;
+
+// appendere con innerHTML il contenuto della variabile thumbsContent al contenitore thumbs
+thumbs.innerHTML = thumbsContent;
+
+// Seleziona il primo elemento come attivo
+document.querySelector(".item").classList.add("active");
+document.querySelector(".thumb").classList.add("active");
