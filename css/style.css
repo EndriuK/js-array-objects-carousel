@@ -25,6 +25,11 @@
 
 .item {
     height: 100%;
+    display: none;
+}
+
+.item.active {
+    display: block;
 }
 
 .item img,
@@ -36,6 +41,11 @@
 
 .thumb {
     height: calc(100% / 5);
+    opacity: 0.5;
+}
+
+.thumb.active {
+    opacity: 1;
 }
 
 .prev,
@@ -43,7 +53,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(211, 211, 211, 0.75);
+    background-color: rgba(218, 218, 218, 0.75);
     cursor: pointer;
     position: absolute;
     z-index: 40;
