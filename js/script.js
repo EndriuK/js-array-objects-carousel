@@ -33,3 +33,17 @@ const thumbs = document.querySelector(".thumbs");
 // creo due variabili per le due immagini attive nel dom
 let itemsContent = "";
 let thumbsContent = "";
+
+// ciclo le immagini per creare i singoli elementi
+images.forEach((image) => {
+  itemsContent += `<div class="item">
+                      <img src="${image.image}" alt="${image.title}">
+                      <div class="text">
+                        <h2>${image.title}</h2>
+                        <p>${image.text}</p>
+                      </div>
+                    </div>`;
+  thumbsContent += `<div class="thumb">
+                      <img src="${image.image}" alt="${image.title}">
+                    </div>`;
+});
